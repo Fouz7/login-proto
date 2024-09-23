@@ -8,6 +8,10 @@ const port = 3000;
 
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+  res.send('Hello');
+});
+
 app.post('/register', async (req, res) => {
   const { email, password } = req.body;
   if (!email || !password) {

@@ -1,14 +1,14 @@
 ﻿### Register a new user
-POST http://localhost:3000/register
+POST https://login-proto.vercel.app/register
 Content-Type: application/json
 
 {
-  "email": "test@mail.com",
+  "email": "coba@mail.com",
   "password": "password123"
 }
 
 ### Login with the registered user
-POST http://localhost:3000/login
+POST https://login-proto.vercel.app/login
 Content-Type: application/json
 
 {
