@@ -1,7 +1,7 @@
-﻿const express = require('express');
-const bcrypt = require('bcrypt');
-const bodyParser = require('body-parser');
-const { User, sequelize } = require('./models/user');
+﻿import express from 'express';
+import bcrypt from 'bcrypt';
+import bodyParser from 'body-parser';
+import { User, sequelize } from './models/user.js';
 
 const app = express();
 const port = 3000;

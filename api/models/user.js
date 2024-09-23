@@ -1,5 +1,7 @@
-﻿const { Sequelize, DataTypes } = require('sequelize');
-require('dotenv').config();
+﻿import { Sequelize, DataTypes } from 'sequelize';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const sequelize = new Sequelize(process.env.POSTGRES_URL, {
   dialect: 'postgres',
@@ -23,4 +25,4 @@ const User = sequelize.define('User', {
   }
 });
 
-module.exports = { User, sequelize };
+export { User, sequelize };
